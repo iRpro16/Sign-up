@@ -2,6 +2,11 @@ body {
     background-color: #28282b;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     height: 100vh;
     display: flex;
@@ -16,7 +21,40 @@ img {
 }
 
 .right-container {
-    border: 3px solid red;
     height: 100%;
     width: 700px
+}
+
+/*Right container styling*/
+
+.upper-section {
+    background-color: #e8e8e8;
+    width: 100%;
+    height: 35%
+}
+
+.middle-section {
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom-section {
+    background-color: #e8e8e8;
+    width: 100%;
+    height: 35%;
+}
+
+/* User input */
+
+form>div {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    width: 200px;
+    height: 25px;
 }
